@@ -1,0 +1,75 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color: #012533;
+  font-family:'Outfit', sans-serif;
+}
+
+#root{
+  height: 100vh;
+  width: auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1ead467;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  gap: 10px;
+
+}
+
+p, span{
+  font-size: 1.5em;
+}
+.session-label, #break-label, #session-label{
+  
+  text-align: center; 
+}
+
+
+#start_stop, #reset{
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  align-self: center;
+  margin: 10px;
+  background-color: #7500b8bb;
+  color: #e4e0d5;
+  font-weight: 700;
+}
+
+
+#break-decrement,#break-increment,#session-decrement,#session-increment{
+  border: none;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  align-self: center;
+  background-color: #48bfe3;
+  color: #e4e0d5;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+:hover#break-decrement,:hover#break-increment,:hover#session-decrement,:hover#session-increment{
+  background-color: #348faa;
+}
+
+:hover#start_stop, :hover#reset{
+  background-color: #510080bb;
+}
+
+@media (max-width: 375px){
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+}
